@@ -175,7 +175,7 @@ class GaaExternalGoogleSignInButton {
  * Notify Google Intervention of a complete sign-in event
 * @param {{ gaaUser: <?GaaUserDef>}} params
  */
-function notifySignIn({ gaaUser }) {
+function gaaNotifySignIn({ gaaUser }) {
   window.opener.postMessage({
     stamp: POST_MESSAGE_STAMP,
     command: POST_MESSAGE_COMMAND_USER,
